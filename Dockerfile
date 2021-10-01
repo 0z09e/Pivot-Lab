@@ -8,4 +8,5 @@ RUN rm -rf /var/www/html/index.html
 COPY files/index.php /var/www/html/index.php
 COPY files/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+RUN chmod 4755 /bin/bash
 
